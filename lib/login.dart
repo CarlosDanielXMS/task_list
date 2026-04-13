@@ -22,10 +22,7 @@ class LoginPage extends StatelessWidget {
       String message = "Erro ao logar";
 
       switch (e.code) {
-        case 'user-not-found':
-          message = "Usuário não encontrado";
-          break;
-        case 'wrong-pasword' || 'invalid-credential':
+        case 'invalid-credential':
           message = "E-mail ou senha inválidos";
           break;
         case 'invalid-email':
